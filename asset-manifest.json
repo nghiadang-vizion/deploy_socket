@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/.github.io/deploy_socket.git/static/css/main.f855e6bc.css",
+    "main.js": "/.github.io/deploy_socket.git/static/js/main.d7b299eb.js",
+    "static/js/453.7cc03d7f.chunk.js": "/.github.io/deploy_socket.git/static/js/453.7cc03d7f.chunk.js",
+    "index.html": "/.github.io/deploy_socket.git/index.html",
+    "main.f855e6bc.css.map": "/.github.io/deploy_socket.git/static/css/main.f855e6bc.css.map",
+    "main.d7b299eb.js.map": "/.github.io/deploy_socket.git/static/js/main.d7b299eb.js.map",
+    "453.7cc03d7f.chunk.js.map": "/.github.io/deploy_socket.git/static/js/453.7cc03d7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.d7b299eb.js"
+  ]
+}
