@@ -4,9 +4,8 @@ import Chatbot from "./Chatbot";
 import Viewer from "./Viewer";
 
 function App() {
-  const [sessionId, setSessionId] = useState("session-123");
-
-  console.log(window.location.pathname);
+  const [sessionId, setSessionId] = useState("");
+  const [inputSessionId, setInputSessionId] = useState("");
 
   useEffect(() => {
     setSessionId(window.location.pathname.split("/")[1]);
@@ -15,8 +14,17 @@ function App() {
   return (
     <div>
       <h1>AI Chatbot & 360 Viewer</h1>
-      <Chatbot sessionId={sessionId} />
-      <Viewer sessionId={sessionId} />
+      <label>Input Session ID:</label>
+      <input onChange={(e) => setInputSessionId(e.target.value)} />
+      <button onClick={() => setSessionId(inputSessionId)}>
+        Set Session ID
+      </button>
+      {sessionId && (
+        <>
+          <Chatbot sessionId={sessionId} />
+          <Viewer sessionId={sessionId} />
+        </>
+      )}
     </div>
   );
 }
